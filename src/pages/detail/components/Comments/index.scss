@@ -1,0 +1,45 @@
+.et-comments {
+  display: flex;
+  padding: 0 16px;
+  gap: 12px;
+  width: 100%;
+  .avatar {
+    height: 32px;
+    width: 32px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &_right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .et-comments_desc {
+      display: flex;
+      height: 15px;
+      align-items: center;
+      justify-content: space-between;
+      .nickname {
+        color: #8560a9;
+        font-size: 12px;
+        height: 15px;
+      }
+      .time {
+        margin-left: 12px;
+        color: #bababa;
+        font-size: 10px;
+      }
+    }
+    .et-comments_details {
+      margin-top: 4px;
+      font-size: 14px;
+      color: #67616d;
+    }
+  }
+  .share-icon {
+    background-color: #d5ef7f;
+    height: 16px;
+    width: 13px;
+    flex-shrink: 0;
+  }
+}

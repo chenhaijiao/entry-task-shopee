@@ -1,0 +1,54 @@
+.et-detail-sticky-menu {
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  padding: 12px 16px;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+
+  &.is-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .menu-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+
+    .icon {
+      flex-shrink: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #bababa;
+    }
+
+    .name {
+      color: #8c8c8c;
+      font-size: 12px;
+      border-right: 1px solid #e8e8e8;
+      margin-right: 14px;
+      padding-right: 13px;
+    }
+
+    &:last-child {
+      .name {
+        border-right: none;
+        padding-right: 0px;
+        margin-right: 0px;
+      }
+    }
+
+    &.active {
+      .icon {
+        background-color: #aecb4f;
+      }
+      .name {
+        color: #aecb4f;
+      }
+    }
+  }
+}

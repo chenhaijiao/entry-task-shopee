@@ -1,0 +1,44 @@
+.going-item {
+  margin-top: 8px;
+  display: flex;
+  padding-right: 16px;
+  margin-left: 16px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 0 16px 0;
+  &:last-child {
+    margin-top: 0px;
+    border: none;
+  }
+  .icon-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px 12px;
+    padding-right: 16px;
+    
+    .image,
+    .arrow-down {
+      height: 24px;
+      width: 24px;
+      flex-shrink: 0;
+      border-radius: 50%;
+    }
+    
+    .arrow-down {
+      background-color: #ac8ec9;
+    }
+    
+    // 默认情况下，隐藏第7个及以后的用户头像
+    .image:nth-child(n + 7) {
+      display: none;
+    }
+  }
+  
+  // 展开状态下显示所有头像
+  &.expanded .icon-wrap {
+    .image:nth-child(n + 7) {
+      display: block;
+    }
+  }
+}

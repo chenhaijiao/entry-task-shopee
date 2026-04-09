@@ -1,0 +1,17 @@
+@mixin single-line($lines: 1, $fallback: false) {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $lines == 1 {
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    white-space: normal;
+    @if $fallback == true {
+      // Fallback approximation for non-webkit if needed
+      max-height: $lines * 1.4em;
+    }
+  }
+}

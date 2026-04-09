@@ -1,0 +1,92 @@
+.et-sticky-wrap,
+.et-send-msg-wrap {
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: #8560a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    height: 24px;
+    width: 24px;
+    flex-shrink: 0;
+    background-color: #453257;
+    &.is-active {
+      background-color: #d5ef7f;
+    }
+  }
+  .left-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+  }
+  .right-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 150px;
+    gap: 12px;
+    background-color: #d5ef7f;
+    .icon {
+      background-color: #788c36;
+    }
+    .going-tips {
+      font-size: 14px;
+      color: #788c36;
+    }
+    &.is-active {
+      .icon {
+        background-color: #8560a9;
+      }
+      .going-tips {
+        color: #8560a9;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.et-send-msg-wrap {
+  // 发送消息时的样式
+  .send-left-wrap {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0 24px 0 6px;
+    gap: 8px;
+    .close-icon {
+      height: 18px;
+      width: 18px;
+      flex-shrink: 0;
+      background-color: #d5ef7f;
+    }
+    .input-wrap {
+      flex: 1;
+      height: 32px;
+      background-color: #fff;
+      border-radius: 20px;
+      .input::placeholder {
+        color: #d3c1e5;
+        font-size: 14px;
+      }
+    }
+  }
+  .send-right-wrap {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d5ef7f;
+    height: 100%;
+    width: 64px;
+    .send-icon {
+      height: 24px;
+      width: 28px;
+      background-color: #8560a9;
+      flex-shrink: 0;
+    }
+  }
+}

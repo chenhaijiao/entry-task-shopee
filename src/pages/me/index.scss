@@ -1,0 +1,50 @@
+.et-me-container {
+  width: 100%;
+  min-height: 100%;
+  // display: flex;
+  // flex-direction: column;
+  overflow: auto;
+  .user-wrap {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    .avatar {
+      margin-top: 36px;
+      flex-shrink: 0;
+      height: 72px;
+      width: 72px;
+      border-radius: 50%;
+      border: 3px solid #d3c1e5;
+    }
+    .nickname {
+      margin-top: 24px;
+      font-size: 24px;
+      color: #67616d;
+    }
+    .email-wrap {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 14px;
+      color: #8560a9;
+      .icon {
+        height: 13px;
+        width: 16px;
+        flex-shrink: 0;
+        background-color: #8560a9;
+      }
+    }
+  }
+  .content-wrap {
+    // flex: 1;
+    padding: 29px 16px;
+    display: flex;
+    flex-direction: column;
+    // overflow: auto;
+    gap: 8px;
+  }
+}

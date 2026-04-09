@@ -1,0 +1,150 @@
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .login-lang-switch {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .login-lang-switch button {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.14);
+    color: #f8f6ff;
+    padding: 8px 12px;
+    border-radius: 14px;
+
+    backdrop-filter: blur(4px);
+  }
+  &::before {
+    background: url('../../assets/images/Street-Dance-01.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(var(--primary-rgb), 0.7), rgba(var(--primary-rgb), 1));
+    z-index: 2;
+  }
+  .overlay-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-wrap {
+    margin-top: 37px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      height: 64px;
+      width: 64px;
+      flex-shrink: 0;
+    }
+  }
+
+  .form-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 118px;
+  }
+  .mgb16 {
+    margin-bottom: 16px;
+  }
+  .button-wrap {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    height: 64px;
+    width: 100%;
+    font-size: 16px;
+    background: var(--complement);
+    color: var(--text);
+    letter-spacing: 1px;
+  }
+
+  .lang {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(0, 0, 0, 0.12);
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .hero {
+    margin-top: 69px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .kicker {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--complement);
+  }
+
+  .title {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: var(--complement);
+  }
+
+  .badge {
+    margin-top: 8px;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 3px solid var(--complement);
+    display: grid;
+    place-items: center;
+    background: rgba(213, 239, 127, 0.12);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+  }
+
+  .badge-icon {
+    width: 72px;
+    height: 72px;
+    background-color: var(--complement);
+    color: #6e3e9f;
+  }
+
+  .input-item {
+    padding: 0 40px;
+    width: 100%;
+  }
+}

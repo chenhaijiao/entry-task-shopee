@@ -1,0 +1,141 @@
+.basic-layout {
+  height: 100vh;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.et-shell {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  transition: transform 200ms ease;
+  will-change: transform;
+
+  &--shifted {
+    transform: translateX(var(--et-drawer-width, 260px));
+  }
+}
+
+.layout-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
+  .et-header {
+    width: 100%;
+  }
+}
+
+.layout-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.floating-controls {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.chip-btn {
+  border: none;
+  background: #d6f24c;
+  color: #453257;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  box-shadow: 0 8px 16px rgba(69, 50, 87, 0.16);
+}
+
+.chip-btn.ghost {
+  background: rgba(255, 255, 255, 0.9);
+  color: #453257;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip-avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #7b4ca0;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.et-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--et-drawer-width, 260px);
+  height: 100vh;
+  background: #fff;
+  transform: translateX(-100%);
+  transition: transform 200ms ease;
+  z-index: 12;
+  overflow: hidden;
+
+  &--open {
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.2);
+    transform: translateX(0);
+  }
+}
+
+.et-drawer-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+.et-header {
+  flex-shrink: 0;
+  background-color: var(--primary);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.et-search-icon {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  margin-left: 16px;
+  background-color: #453257;
+}
+.et-search-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.et-cat-icon {
+  height: 24px;
+  width: 21px;
+  flex-shrink: 0;
+  color: var(--complement);
+}
+.et-avatar {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  margin-right: 14px;
+  border-radius: 50%;
+  overflow: hidden;
+}

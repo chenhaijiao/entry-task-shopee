@@ -1,0 +1,30 @@
+.toast-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  pointer-events: none;
+  width: 100%;
+  background-color: rgba(229, 247, 169, 0.8);
+}
+
+.toast {
+  width: 100%;
+  min-height: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20px;
+  color: #8560a9;
+  padding: 6px 12px;
+  pointer-events: none;
+}
+
+.toast.success {
+  background-color: rgba(229, 247, 169, 0.8);
+}
+
+.toast.error {
+  background-color: rgba(243, 177, 196, 0.8);
+}

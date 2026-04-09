@@ -1,0 +1,31 @@
+.virtual-infinite-list {
+  width: 100%;
+}
+
+.vil-row {
+  box-sizing: border-box;
+}
+
+.vil-sentinel {
+  pointer-events: none;
+}
+
+.empty,
+.end-text,
+.error {
+  padding: 6px;
+  text-align: center;
+  color: #67616d;
+}
+
+.retry-btn {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.end-text {
+  font-size: 12px;
+}

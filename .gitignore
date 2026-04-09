@@ -1,0 +1,15 @@
+node_modules
+.umi
+.umi-production
+.umi-test
+dist
+tmp
+*.log
+.DS_Store
+.env.local
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.pnp.*
+plan.md
+circle.md
