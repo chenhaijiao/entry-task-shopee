@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "max dev",
     "start": "max dev",
-    "build": "max build",
+    "build": "max build --output public",
     "lint": "eslint --ext .ts,.tsx,.js src",
     "typecheck": "max setup && tsc --noEmit"
   },
