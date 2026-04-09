@@ -1,7 +1,7 @@
 import { defineConfig } from '@umijs/max';
 import px2rem from 'postcss-pxtorem';
 export default defineConfig({
-  outputPath: 'public',
+  outputPath: 'dist',
   npmClient: 'yarn',
   history: { type: 'browser' },
   locale: {
